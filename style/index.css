@@ -45,31 +45,28 @@ table {
 
 /* MY STYLES */
 
-*{
-	font-size: 62.5%;
-}
-
 html{
 	font-family: 'IBM Plex Mono', monospace;
-	font-size: 1.2rem;
+	font-size: 62.5%;
 }
 
 h1{
 	font-family: 'Orbitron', sans-serif;
-	font-size: 2.5rem;
+	font-size: 4rem;
 	text-align: center;
 }
 
 h2 {
 	font-family: 'Orbitron', sans-serif;
-	font-size: 1.8rem;
+	font-size: 3rem;
 	text-align: center;
 }
 
 h3{
 	font-family: 'Orbitron', sans-serif;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	text-align: center;
+	margin-bottom: 3%;
 }
 
 img{
@@ -82,6 +79,7 @@ header{
 }
 
 p{
+	font-size: 1.8rem;
 	line-height: 1.5;
 }
 
@@ -101,7 +99,7 @@ p{
 nav{
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: space-between;
 	margin: 2% auto;
 }
 
@@ -122,25 +120,27 @@ a:after{
 }
 
 .header{
-	max-width: 100vw;
-	justify-content: flex-start;
+	max-width: 98vw;
+	justify-content: space-between;
 }
 .nav-link{
-	margin: 5%;
+	margin: 5% 1%;
 	border: 2px solid black;
 	border-radius: 5px;
 	background-color: slategrey;
 	color: white;
 	padding: 2%;
+	font-size: 1.4rem;
 }
 
 .current{
-	margin: 5%;
+	margin: 5% 1%;
 	border: 2px solid black;
 	border-radius: 5px;
 	background-color:darkslategray;
 	color: white;
 	padding: 2%;
+	font-size: 1.4rem;
 }
 
 .section-header{
@@ -170,9 +170,15 @@ a:after{
 	font-family: 'IBM Plex Mono', monospace;
 }
 
+.header-image{
+	padding: 3%;
+	margin: 0 auto;
+}
+
 .profile-image{
 	border-radius: 50%;
 	padding: 3%;
+	margin: 0 auto;
 }
 
 .preview{
@@ -197,6 +203,7 @@ a:after{
 
 .hobbies{
 	border-bottom: 2px solid black;
+    text-align: center;
 }
 
 .footer{
@@ -241,4 +248,34 @@ button:hover{
 	justify-content: center;
 	margin: 2%;
 	padding: 2%;
+}
+
+@media (max-width: 800px){
+    .header-container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.profile-image{
+		display: flex;
+		justify-content: center;
+	}
+	nav{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 500px){
+	p{
+        text-align: center;
+    }
+    img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .card{
+        width: 200px;
+        height: 300px;
+    }
+
 }
